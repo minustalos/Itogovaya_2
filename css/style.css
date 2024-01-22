@@ -1,0 +1,187 @@
+		form {
+		border: 5px solid green;
+		border-collapse: collapse;
+	}
+	caption {
+		font-size: 20pt;
+	}
+	
+		body {
+		background: black;
+		color: white;
+	}
+	
+			table, th, td {
+		border: 1px solid yellow;
+		border-collapse: collapse;
+	}
+	caption {
+		font-size: 14pt;
+	}
+	
+	.link {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    background-color: #1e88e5;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 15px 25px;
+   }
+
+.link:hover {
+ background-color: #e53935;
+}
+
+.link {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    background-color: #1e88e5;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 15px 25px;
+    transition: all 0.8s ease 0s;
+   }
+
+   .link {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    background-color: #1e88e5;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 15px 25px;
+    transition: all 0.8s ease 0s;
+   }
+   
+   /* Стили для блока с тестом */
+#callback {
+    width: 300px;
+    height: 150px;
+    background-color: grey;
+    position: fixed;
+    bottom: 30px;
+   }
+   /* стили для абзаца */
+   #callback p {
+    color: #fff;
+    padding: 22px;
+   }
+   /*Стили для пседвоэлемента*/
+#callback:after {
+    content: 'Дополнение';
+    background-color: pink;
+   }
+
+/*Стили для пседвоэлемента*/
+#callback:after {
+    content: 'Дополнение';
+    background-color: pink;
+    text-align: center;
+    border-radius: 0 0 8px 8px;
+    padding: 5px 0;
+    width: 150px; /* ширина псевдоэлемента равна высоте блока*/
+    position: fixed; /* позиционирование абсолютное */
+    left: 300px; /* позиция слева равен ширине блока #callback */ 
+   }
+
+   /*Стили для пседвоэлемента*/
+#callback:after {
+    content: 'Дополнение';
+    background-color: pink;
+    text-align: center;
+    border-radius: 0 0 8px 8px;
+    padding: 5px 0;
+    width: 150px; /* ширина псевдоэлемента равна высоте блока */
+    position: fixed; /* позиционирование абсолютное */
+    left: 300px; /* позиция слева равен ширине блока #callback */
+    transform: rotate(-90deg); 
+   }
+
+   /*Стили для пседвоэлемента*/
+#callback:after {
+    content: 'Дополнение';
+    background-color: pink;
+    text-align: center;
+    border-radius: 0 0 8px 8px;
+    padding: 5px 0;
+    width: 150px; /* ширина псевдоэлемента равна высоте блока */
+    position: fixed; /* позиционирование абсолютное */
+    left: 300px; /* позиция слева равен ширине блока #callback */
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+   }
+
+   #callback {
+    width: 300px;
+    height: 150px;
+    background-color: grey;
+    position: fixed;
+    bottom: 30px;
+    transform: translateX(-100%);
+   }
+
+   #callback:hover {
+    transform: translateX(0%);
+    transition: all 0.7s ease;
+   }
+   
+   /* Стили для родительского блока */
+.card {
+    width: 1024px;
+    height: 640px;
+    margin: 0 auto;
+    position: relative; /* относительное позиционирование родительского элемента, чтобы дочерние .product, .description располагать внутри  card */
+    border: 1px solid #f5dde1;
+   }
+.product,
+.description {
+    width: 100%; /* ширина 100% родителя */
+    height: 100%; /* высота 100% родителя */
+    position: absolute; /* абсолютное позиционирование элементов внутри родителя с классом card */
+    left: 0; /* координата позиционирования слева 0px*/
+    top: 0; /* координата позиционирования сверху 0px */
+    text-align: center;
+    background-color: #fff;
+   }
+   /* Стили для кнопки описательного блока карточки товара */
+   .description a {
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #f5dde1;
+   }
+   .product,
+   .description {
+    backface-visibility: hidden;
+   }
+
+   .description {
+    box-sizing: border-box;
+    padding: 40px;
+    transform: rotateY(
+      180deg
+    ); /* поворот блока с описанием на 180 град, прячем его в начальном состоянии, без наведения курсора мыши */
+   }
+   .product,
+.description {
+ transition: 1s;
+}
+.card:hover .product {
+    transform: rotateY(180deg); /* разворачиваем блок с изображением на 180 градусов */
+   }
+   .card:hover .description {
+    transform: rotateY(360deg); /* возвращаем блок*/
+   }
+
+.card p {
+	color: black;
+}
+
+.card h2 {
+	color: black;
+}
